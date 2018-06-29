@@ -1,7 +1,7 @@
 {
   "name": "rollup-plugin-ignore-import",
   "description": "Ignore import rollup plugin",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "rollup-plugin-ignore-import.js",
   "module": "rollup-plugin-ignore-import.es.js",
   "jsnext:main": "rollup-plugin-ignore-import.es.js",
