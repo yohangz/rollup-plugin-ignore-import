@@ -1,7 +1,11 @@
 /**
+ * Constructs a Rollup plugin to ignore imports.
  *
- * @param options
- * @return {*}
+ * @param {Object} options
+ * @param {array} options.extensions Import extension collection to ignore.
+ *
+ * @return {Object} The rollup plugin object, as documented on the wiki:
+ *   https://github.com/rollup/rollup/wiki/Plugins#creating-plugins
  */
 export default function noopImport(options = {}) {
   return {
