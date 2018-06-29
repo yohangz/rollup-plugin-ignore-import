@@ -1,0 +1,40 @@
+{
+  "name": "rollup-plugin-ignore-import",
+  "description": "Ignore import rollup plugin",
+  "version": "0.0.0",
+  "main": "rollup-plugin-ignore-import.js",
+  "module": "rollup-plugin-ignore-import.es.js",
+  "jsnext:main": "rollup-plugin-ignore-import.es.js",
+  "scripts": {
+    "build:copy:package": "node copy-package.js",
+    "build": "rollup -c && npm run build:copy:package",
+    "lint": "eslint src rollup.config.js",
+    "postversion": "npm run lint && npm run build",
+    "prerelease": "git push && git push --tags",
+    "release": "npm publish dist"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "eslint": "^5.0.1",
+    "fs-extra": "^6.0.1",
+    "rollup": "^0.62.0",
+    "rollup-plugin-buble": "^0.19.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yohangz/rollup-plugin-ignore-import.git"
+  },
+  "keywords": [
+    "rollup",
+    "rollup-plugin",
+    "ignore",
+    "import"
+  ],
+  "author": "Yohan Gomez <yohan.gz@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yohangz/rollup-plugin-ignore-import/issues"
+  },
+  "homepage": "https://github.com/yohangz/rollup-plugin-ignore-import#readme"
+}
