@@ -1,7 +1,7 @@
 {
   "name": "rollup-plugin-ignore-import",
   "description": "Ignore import rollup plugin",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "main": "rollup-plugin-ignore-import.js",
   "module": "rollup-plugin-ignore-import.es.js",
   "jsnext:main": "rollup-plugin-ignore-import.es.js",
@@ -13,8 +13,7 @@
     "prerelease": "git push && git push --tags",
     "release": "npm publish dist"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "eslint": "^5.0.1",
     "fs-extra": "^6.0.1",
