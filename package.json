@@ -13,7 +13,9 @@
     "prerelease": "git push && git push --tags",
     "release": "npm publish dist"
   },
-  "dependencies": {},
+  "dependencies": {
+    "rollup-pluginutils": "^2.3.3"
+  },
   "devDependencies": {
     "eslint": "^5.0.1",
     "fs-extra": "^6.0.1",

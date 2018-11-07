@@ -1,3 +1,5 @@
+import { createFilter } from 'rollup-pluginutils';
+
 /**
  * Constructs a Rollup plugin to ignore imports.
  *
@@ -8,11 +10,12 @@
  *   https://github.com/rollup/rollup/wiki/Plugins#creating-plugins
  */
 export default function noopImport(options = {}) {
+  const include = options.extensions.map((ext) => `**/*${ext}`);
+  const filter = createFilter(include, options.exclude || 'node_modules/**');
+
   return {
     transform(code, id) {
-      if (!options.extensions.some(ext => id.endsWith(ext))) {
-        return;
-      }
+      if (!filter(id)) return;
 
       const body = 'export default undefined;';
 
