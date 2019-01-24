@@ -6,6 +6,7 @@ if (Object.keys(packageJson.dependencies).length) {
 }
 
 delete packageJson.dependencies;
+delete packageJson.devDependencies;
 delete packageJson.scripts;
 writeJsonSync('./dist/package.json', packageJson, { spaces: 2, EOL: '\n' });
 
