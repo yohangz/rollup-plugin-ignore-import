@@ -15,12 +15,12 @@
   },
   "dependencies": {
     "rollup": ">=0.62.0",
-    "rollup-pluginutils": "^2.3.3"
+    "rollup-pluginutils": "^2.8.1"
   },
   "devDependencies": {
-    "eslint": "^5.12.1",
-    "fs-extra": "^7.0.1",
-    "rollup-plugin-buble": "^0.19.2"
+    "eslint": "^6.0.1",
+    "fs-extra": "^8.1.0",
+    "rollup-plugin-buble": "^0.19.8"
   },
   "repository": {
     "type": "git",
