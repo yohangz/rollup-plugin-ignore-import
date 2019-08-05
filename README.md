@@ -24,6 +24,8 @@ Via [NPM](https://www.npmjs.com/)
 
 ## Usage
 
+### Using `extensions`
+
 ```js
 // rollup.config.js
 import ignoreImport from 'rollup-plugin-ignore-import';
@@ -39,6 +41,25 @@ export default {
   ]
 }
 ```
+
+### Using `include`
+
+```js
+// rollup.config.js
+import ignoreImport from 'rollup-plugin-ignore-import';
+
+export default {
+  entry: 'entry.js',
+  dest: 'bundle.js',
+  plugins: [
+    ignoreImport({
+      // Ignore all .scss and .css file imports while building the bundle
+      include: ['**/*.scss', '**/*.css']
+    })
+  ]
+}
+```
+
 ## License
 
 This software is licensed under the [MIT][license] License
