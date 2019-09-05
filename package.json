@@ -5,6 +5,7 @@
   "main": "rollup-plugin-ignore-import.js",
   "module": "rollup-plugin-ignore-import.es.js",
   "jsnext:main": "rollup-plugin-ignore-import.es.js",
+  "types": "index.d.ts",
   "scripts": {
     "build:copy:package": "node copy-package.js",
     "build": "rollup -c && npm run build:copy:package",
