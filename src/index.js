@@ -17,7 +17,7 @@ export default function noopImport(options = {}) {
     transform(code, id) {
       if (!filter(id)) return;
 
-      const body = 'export default undefined;';
+      const body = (options.body || options.body === '') ? options.body : 'export default undefined;';
 
       return {
         code: body,

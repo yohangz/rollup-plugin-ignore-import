@@ -12,3 +12,4 @@ writeJsonSync('./dist/package.json', packageJson, { spaces: 2, EOL: '\n' });
 
 copySync('README.md', 'dist/README.md');
 copySync('LICENSE', 'dist/LICENSE');
+copySync('index.d.ts', 'dist/index.d.ts');
