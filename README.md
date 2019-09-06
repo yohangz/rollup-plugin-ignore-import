@@ -36,7 +36,9 @@ export default {
   plugins: [
     ignoreImport({
       // Ignore all .scss and .css file imports while building the bundle
-      extensions: ['.scss', '.css']
+      extensions: ['.scss', '.css'],
+      // Optional: replace body for ignored files. Default value is "export default undefined;"
+      body: 'export default undefined;'
     })
   ]
 }
@@ -54,7 +56,9 @@ export default {
   plugins: [
     ignoreImport({
       // Ignore all .scss and .css file imports while building the bundle
-      include: ['**/*.scss', '**/*.css']
+      include: ['**/*.scss', '**/*.css'],
+      // Optional: replace body for ignored files. Default value is "export default undefined;"
+      body: 'export default undefined;'
     })
   ]
 }
