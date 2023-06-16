@@ -11,7 +11,7 @@ import { createFilter } from 'rollup-pluginutils';
  */
 export default function noopImport(options = {}) {
   const include = options.include || options.extensions.map((ext) => `**/*${ext}`);
-  const filter = createFilter(include, options.exclude || 'node_modules/**');
+  const filter = createFilter(include, options.exclude || 'node_modules/**', options.filterOption);
 
   return {
     transform(code, id) {

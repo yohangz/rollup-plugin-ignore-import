@@ -5,6 +5,7 @@ export interface noopImportOptions {
     exclude?: Array<string | RegExp> | string | RegExp | null
     extensions?: Array<string>
     include?: Array<string | RegExp> | string | RegExp | null
+    filterOption?: { resolve?: string | false | null }
 }
 
 export default function noopImport(options: noopImportOptions): Plugin;
